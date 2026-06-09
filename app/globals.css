@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f2ea;
+  --foreground: #17211b;
+  --muted: #756d63;
+  --primary: #1f5136;
+  --primary-dark: #143825;
+  --gold: #c79b4b;
+  --cream: #fff8eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-grid {
+  background-image: linear-gradient(rgba(31, 81, 54, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 81, 54, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.glass-card {
+  background: rgba(255, 248, 235, 0.84);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(199, 155, 75, 0.24);
+  box-shadow: 0 24px 80px rgba(23, 33, 27, 0.12);
+}
+
+.property-card {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 60px rgba(23, 33, 27, 0.15);
+}
